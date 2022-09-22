@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
  * _strcat - concatenates the spring pointed to by @src to
  * to the end of the string pointed to by @dest
  * @dest string that will be appended
  * @src string that will be concatenated upon
  *
- * returns pointer to @dest
+ * Return: returns pointer to @dest
  */
 
 char *_strcat(char *dest, char *src)
