@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * _strncat - Concatenates two strings
- * @dest:The estination value
- * @src:The source value
- * @n:The limit of the concatenation
+ * _strncat - Concatenates two strings add imputed number of bytes
+ * @dest: String to be appended upon
+ * @src: String to be completed at end of dest
+ * @n: Integer parameter to compare index to
  *
- * Return: A pointer to the resulting string dest
+ * Return: returns new concatenated string
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, dest_len = 0;
+	int index = 0, dest_len = 0;
 
-	while (dest[i++])
+	while (dest[index++])
 		dest_len++;
-	for (i = 0; src[i] && i < n; i++)
-		dest[dest_len++] = src[i];
+	for (index = 0; src[index] && index < n; index++)
+		dest[dest_len++] = src[index];
 	return (dest);
 }
