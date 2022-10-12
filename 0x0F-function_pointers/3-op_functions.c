@@ -3,7 +3,7 @@
 /**
  * op_add - calculates the sum of two integers
  * @a: first integer
- * @b second integer
+ * @b: second integer
  *
  * Return: suma of a and b
  */
