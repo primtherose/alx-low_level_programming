@@ -1,23 +1,21 @@
 #ifndef _LISTS_
 #define _LISTS_
 
-#include <stdio.h>
-#include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 /**
  * struct list_s - singly linked list
- * @str: string malloc'ed string
+ * @str: string - (malloc'ed string)
  * @len: length of the spring
  * @next: points to the next node
  *
- * Description: singly linked lists node structure
+ * Description: singly linked lists node structure for project
  */
 typedef struct list_s
 {
 	char *str;
 	unsigned int len;
-	struct lists_s *next;
+	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);
